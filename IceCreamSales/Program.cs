@@ -294,3 +294,18 @@ static void Main(string[] args)
         }
     }
 }
+
+
+//1)What was the most complex part of the assignment for you personally and why?
+/* in GrowthByMonth function , I had to calculate the month-to-month growth for each SKU.
+ This involved handling cases where a SKU might not be present in one of the months,
+which required careful handling of dictionary lookups and ensuring that
+I didn't attempt to divide by zero when calculating growth percentages. */
+
+//2)Describe a bug you expect to hit while implementing this and how you would debug it.
+/* If you don't validate properly and include these bad rows, the revenue totals for March will be wrong,
+which means the growth percentage for those items will also be wrong. */
+
+//3)Does your solution handle larger data sets without any performance implications?
+/*Yes, the solution handles larger datasets well. The use of dictionaries allows for efficient lookups and aggregations,
+and the overall complexity is manageable for typical sales data sizes. */
